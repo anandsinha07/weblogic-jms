@@ -19,8 +19,8 @@ public class PostToQueue {
 
     public final static String SERVER= "t3://localhost:7001";
     public final static String JNDI_FACTORY= "weblogic.jndi.WLInitialContextFactory";
-    public final static String JMS_FACTORY= "/com/conduent/weblogic/base/cf";
-    public final static String QUEUE= "/com/conduent/weblogic/base/dq";
+    public final static String JMS_FACTORY= "/com/weblogic/base/cf";
+    public final static String QUEUE= "/com/weblogic/base/dq";
 
     private QueueConnectionFactory queueConnectionFactory;
     private QueueSession queueSession;
