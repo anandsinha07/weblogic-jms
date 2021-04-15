@@ -16,5 +16,5 @@ Setting up with WebLogic Server on MacOs &amp; spring-boot integration for posti
             * The domain location is **/wls12213/user_projects/domains/base_domain**
     
 3. Go to **/wls12213/user_projects/domains/base_domain** and execute `./startWebLogic.sh` to start your weblogic server.
-4. If all went good, go to your browser and hit `http://localhost:7001/console/`, yuu should be able to see the login dashboard now. Enter the username as **weblogic** and the password you already created.
+4. If all went good, go to your browser and hit `http://localhost:7001/console/`, you should be able to see the login dashboard now. Enter the username as **weblogic** and the password you already created.
 5. Congratulations!! You are in.
