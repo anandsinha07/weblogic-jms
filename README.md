@@ -1,5 +1,5 @@
 # weblogic-jms
-Setting up with WebLogic Server on MacOs &amp; spring-boot integration for posting messages to JMS queue - reading messages from JMS queue.
+Setting up with WebLogic Server on MacOs &amp; spring-boot integration for posting messages to JMS queue/topic - reading messages from JMS queue/topic.
 
 ## Prerequisites:
 * make sure you have java8 installed and java home path well set i.e `/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home`
