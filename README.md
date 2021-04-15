@@ -18,3 +18,56 @@ Setting up with WebLogic Server on MacOs &amp; spring-boot integration for posti
 3. Go to **/wls12213/user_projects/domains/base_domain** and execute `./startWebLogic.sh` to start your weblogic server.
 4. If all went good, go to your browser and hit `http://localhost:7001/console/`, you should be able to see the login dashboard now. Enter the username as **weblogic** and the password you already created.
 5. Congratulations!! You are in.
+<img width="1680" alt="Screenshot 2021-04-15 at 6 35 57 PM" src="https://user-images.githubusercontent.com/31561908/114874135-a4baab00-9e19-11eb-9837-480d0c485739.png">
+This is the landing page we refer to for **Environment** and **Services** sections.
+## Weblogic JMS configuration setup
+1. Click on Server inside Environment on the landing page and you should have AdminServer running on 7001
+<img width="1680" alt="Screenshot 2021-04-15 at 6 42 57 PM" src="https://user-images.githubusercontent.com/31561908/114874934-6ffb2380-9e1a-11eb-82c4-058809a3f321.png">
+2. Now go back to landing page and click on **JMS Servers** inside Environmet - Messaging section :
+   * Click New
+   * Name your new **JMS Server** i.e **DemoJMSServer-0**
+   * Next
+   * Click on **Create a New Store**, select a store type as **File Store**
+   * Name your new file store i.e **DemoFileStore-0**
+   * Chose JMS File Store Targets as **AdminServer**
+   * Finish
+   * Chose Persistent Store as **DemoFileStore-0**
+   * Select target as **AdminServer**
+   * You are good to see this page:
+<img width="1680" alt="Screenshot 2021-04-15 at 6 51 30 PM" src="https://user-images.githubusercontent.com/31561908/114876172-b00ed600-9e1b-11eb-982a-0382434b3909.png">
+3. Now go back to landing page and click on **JMS Modules** inside Environmet - Messaging section :
+   * Click New
+   * Name your system module i.e **DemoSystemModule-0**
+   * Next
+   * Tick **AdminServer**
+   * Tick **Would you like to add resources to this JMS system module?**
+   * Finish
+   * You are good to see this page
+<img width="1680" alt="Screenshot 2021-04-15 at 6 58 16 PM" src="https://user-images.githubusercontent.com/31561908/114877123-9fab2b00-9e1c-11eb-9fbc-e2f2034d0927.png">
+4. Now go back to landing page and click on **JMS Modules** inside Environmet - Messaging section :
+   * Click on **DemoSystemModule-0**
+   * Click New
+   * Choose **Connection Factory**
+   * Next
+   * Fill **Name** your **JNDI Name** as **/com/weblogic/base/cf**
+   * Next
+   * Next
+   * Finish
+<img width="1680" alt="Screenshot 2021-04-15 at 7 04 22 PM" src="https://user-images.githubusercontent.com/31561908/114877973-69ba7680-9e1d-11eb-83af-930b8a91617c.png">
+
+   * Click New again
+   * Choose **Distributed Queue**
+   * Next
+   * Fill **Name** your **JNDI Name** as **/com/weblogic/base/dq**
+   * Next
+   * Finish
+<img width="1680" alt="Screenshot 2021-04-15 at 7 07 21 PM" src="https://user-images.githubusercontent.com/31561908/114878394-d59cdf00-9e1d-11eb-8286-a8578e51e330.png">
+
+   * Click New again
+   * Choose **Distributed Topic**
+   * Next
+   * Fill **Name** your **JNDI Name** as **/com/weblogic/base/dt**
+   * Next
+   * Finish
+<img width="1680" alt="Screenshot 2021-04-15 at 7 09 10 PM" src="https://user-images.githubusercontent.com/31561908/114878650-172d8a00-9e1e-11eb-8de0-19dc6b282b47.png">
+5. Congratulations!! You are all set.
