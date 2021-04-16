@@ -3,6 +3,7 @@ Setting up with WebLogic Server on MacOs &amp; spring-boot integration for posti
 
 ## Prerequisites:
 * make sure you have java8 installed and java home path well set i.e `/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home`
+
 ## Steps to install WebLogic Server
 1. Download using the recommended version link provided:
    [GitHub]https://www.oracle.com/middleware/technologies/weblogic-server-installers-downloads.html#license-lightbox
@@ -20,7 +21,8 @@ Setting up with WebLogic Server on MacOs &amp; spring-boot integration for posti
 5. Congratulations!! You are in.
 <img width="1680" alt="Screenshot 2021-04-15 at 6 35 57 PM" src="https://user-images.githubusercontent.com/31561908/114874135-a4baab00-9e19-11eb-9837-480d0c485739.png">
 This is the landing page we refer to for **Environment** and **Services** sections.
-## Weblogic JMS configuration setup
+
+## WebLogic JMS configuration setup
 1. Click on Server inside Environment on the landing page and you should have AdminServer running on 7001
 <img width="1680" alt="Screenshot 2021-04-15 at 6 42 57 PM" src="https://user-images.githubusercontent.com/31561908/114874934-6ffb2380-9e1a-11eb-82c4-058809a3f321.png">
 2. Now go back to landing page and click on **JMS Servers** inside Environmet - Messaging section :
@@ -71,3 +73,30 @@ This is the landing page we refer to for **Environment** and **Services** sectio
    * Finish
 <img width="1680" alt="Screenshot 2021-04-15 at 7 09 10 PM" src="https://user-images.githubusercontent.com/31561908/114878650-172d8a00-9e1e-11eb-8de0-19dc6b282b47.png">
 5. Congratulations!! You are all set.
+
+## JMS Queue Posting Program
+* Go to **poster** directory inside **com.example.weblogic.weblogicjms**
+* Now, run PostToQueue.main()
+
+## JMS Queue Reading Program
+* Go to **reader** directory inside **com.example.weblogic.weblogicjms**
+* Now, run ReadFromQueue.main()
+
+## JMS Topic Posting Program
+* Go to **poster** directory inside **com.example.weblogic.weblogicjms**
+* Now, run PostToTopic.main()
+
+## JMS Topic Reading Program
+* Go to **reader** directory inside **com.example.weblogic.weblogicjms**
+* Now, run ReadFromTopic.main()
+
+## Contact
+
+The preferred way of contacting me is to mail me at
+[anandkumarsinha07@gmail.com](anandkumarsinha07@gmail.com)
+My twitter handle is
+[`@anandsinha07`](https://twitter.com/anandsinha07)
+You can also connect me on
+LinkedIn -- https://www.linkedin.com/in/anand-kumar-sinha-54381b126/
+
+## **`Happy Coding!`**
